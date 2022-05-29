@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title> Login </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <div class="card">
+        <div class="inner-box" id="card">
+        <div class="card-front">
+                    <h2>Login</h2>
+                    <form>
+                        <input type="email" class="input-box" placeholder="Email hoặc số điện thoại" required>
+                        <input type="password" class="input-box" placeholder="Mật khẩu" required>
+                        <button type="submit" class="submit-btn">Đăng nhập</button>
+                        <input type="checkbox"><span>Nhớ mật khẩu</span>
+                    </form>
+                    <a href="">Quên mật khẩu</a>
+
+                    <button type="button" class="btn" onclick="openRegister() "> Đăng ký </button>
+                    
+        </div>
+        <div class="card-back">
+            <h2>Register</h2>
+                    <form>
+                        <input text="text" class="input-box" placeholder="Họ và tên" required>
+                        <input type="email" class="input-box" placeholder="Email hoặc số điện thoại" required>
+                        <input type="password" class="input-box" placeholder="Mật khẩu" required>
+                        <button type="submit" class="submit-btn">Đăng ký</button>
+                       <!-- <input type="checkbox"><span>Nhớ mật khẩu</span>-->
+                    </form>
+                    <button type="button" class="btn" onclick="openLogin()" > Bạn đã có tài khoản </button>
+                   <!-- <a href="">Forgot password</a>-->
+
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <script>
+            var card = document.getElementById("card");
+            function openRegister()
+            {
+                card.style.transform= "rotateY(-180deg)";
+            }
+
+            function openLogin()
+            {
+                card.style.transform= "rotateY(0deg)";
+            }
+        </script>
+    </body>
+    </html>
